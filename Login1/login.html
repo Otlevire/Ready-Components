@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Erivelto Clénio da Costa e Silva(Otlvire)">
+    <meta name="description" content="Página de Login da UcanWallet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UcanWallet - Login</title>
+    <link rel="shortcut icon" href="./image/UcanWallet_branco.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="criar-conta.html">Criar Conta</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <form action="#" method="get" class="search-bar">
+            <input type="text" name="texto" id="" placeholder="Pesquise...">
+            <button type="submit">
+                <i class='bx bx-search'></i>
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <div class="background"></div>
+        <div class="container">
+            <div class="content">
+                <h2 class="logo"><i class='bx bxl-firebase'>UcanWallet</i></h2>
+                <div class="text-sci">
+                    <h2>
+                        Bemvindo!<br>
+                        <span>
+                            a nossa Carteira Digital
+                        </span>
+                    </h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque nam nisi ratione
+                        tenetur. .</p>
+
+                    <div class="social-icons">
+                        <a
+                            href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpt.linkedin.com%2F"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=100077459753038"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logreg-box">
+                <div class="form-box login">
+                    <form action="#">
+                        <h2>Login</h2>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email:</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Password:</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label for="">
+                                <input type="checkbox" name="" id="">
+                                Lembrar-me
+                            </label>
+                            <a href="#">Esqueci a minha Password</a>
+                        </div>
+
+                        <button type="submit" class="btn">Entrar</button>
+
+                        <div class="login-register">
+                            <p>
+                                Não tem uma conta ainda?
+                                <a href="criar-conta.html" class="register-link">Abrir uma</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <script>
+        Swal.fire(
+            'Bemvindo a UcanWallet!',
+            'Tenha o seu dinheiro disponivel a qualquer hora e momento!',
+            'success'
+        )
+    </script>
+</body>
+
+</html>
