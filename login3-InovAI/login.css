@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color: #e84545;
+    --primary-hover-color: #ca5454;
+    --gray-color:#201e1e;
+
+    --background-dark-color:#212529;
+    --background-dark-text-color:#fff1f1;
+
+}
+
+body{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('globo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mode-dark{
+    background-color: var(--background-dark-color);
+    color: var(--background-dark-text-color);
+}
+
+.mode-light{
+    background-color: var(--background-dark-text-color);
+    color: var(--background-dark-color);
+}
+
+.big-card{
+    border-radius: 25px;
+    border-color: #dfdcdc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-title{
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.input-container{
+    padding: 20px;
+}
+
+.input-container input{
+    display: block;
+    width: 100%;
+    margin-top:5px;
+    border: none;
+    border-bottom: 2px solid #dfdcdc;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.button-container button{
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.button-container button:hover{
+    background-color: var(--primary-hover-color);
+}
+
+.icons{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.icons i {
+    font-size: 35px;
+    margin:0px 5px;
+    color: var(--primary-color);
+}
+
+.icons i:hover {
+    font-size: 34px;
+    color: var(--primary-hover-color);
+}
+
+.content{
+    padding: 20px;
+    color:#fff;
+
+}
+
+.content h1, h2, p{
+    margin:25px 0px;
+}
+
+.content h2{
+    font-size:50px;
+    color: var(--primary-color);    
+}
+
+.content span{
+    font-size: small;
+    color: #fff;
+}
+
+.links{
+    margin-top: 15px;
+}
+.links a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.links a:hover{
+    text-decoration: underline;
+}
